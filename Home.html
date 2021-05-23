@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/CSS.css">
+<link rel="stylesheet" href="CSS/CSS1.css">
+<link rel="stylesheet" href="CSS/CSS2.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#Home" class="w3-button w3-bar-item">Home</a>
+  <a href="#E-Books" class="w3-button w3-bar-item">E-Books</a>
+  <a href="https://www.youtube.com/channel/UC8gHgF-9PTyYl8KPDpdWdGg" class="w3-button w3-bar-item">Videos</a>
+  <a href="#Contact" class="w3-button w3-bar-item">Contact</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="Images/1.jpg"
+  style="width:100%">
+  <img class="mySlides" src="Images/.jpg"
+  style="width:100%">
+  <img class="mySlides" src="Images/4.jpg"
+  style="width:100%">
+</section>
+
+<!-- Band Description -->
+<div class="w3-animate-left w3-xlarge">
+<section class="w3-container w3-center w3-content w3-animate-left" style="max-width:600px">
+  <h1 class="w3-wide">welcome</h1>
+  <p class="w3-opacity"><i>hello</i></p>
+  <p class="w3-justify">we are here to help you.</p>
+</section>
+</div>
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>John</p>
+    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+    <p>John is the smartest.</p>
+  </article>
+  <article class="w3-third">
+    <p>Paul</p>
+    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+    <p>Paul is the prettiest.</p>
+  </article>
+  <article class="w3-third">
+    <p>Ringo</p>
+    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+    <p>Ringo is the funniest.</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="https://www.instagram.com/skills_donar/" target="_blank">SKILLS_DONOR</a>
+  </p>
+</footer>
+
+<script src="js/JS.js"></script>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() 
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+

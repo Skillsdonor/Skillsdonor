@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/CSS4.css">
+<link rel="stylesheet" href="CSS/CSS2.css">
+<link rel="stylesheet" href="CSS/CSS1.css">
+
+</head>
+<style type="text/css">
+
+
+</style>
+
+<body>
+<div>
+<center><h1>Welcome to Login  page</h1>
+<br>
+
+<input type="text" name=""placeholder="username" id="username">
+<input type="password" name=""placeholder="password" id="password">
+<input type="submit" name="" value="login"  onclick="login()">
+</div>
+
+<script type="text/javascript">
+	
+	function login(){
+	var uname=document.getElementById('username').value;
+	var pass=document.getElementById('password').value;
+	if(uname=="worldpc" && pass=="1234")
+	{
+	location.assign("Home.html");
+	}
+	else 
+	{
+	window.alert("login failed");
+	}
+	} </script>
+
+</body>
+</html>

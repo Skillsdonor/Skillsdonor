@@ -1,0 +1,61 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: sans_serif;
+	background: url(../Images/4.jpg);
+	background-size:cover;
+}
+
+
+div h1{
+	color:white;
+	text-transform: uppercase;
+	font-weight:700;
+	
+	
+}
+div input[type="text"],div input[type="password"]
+{
+	border:0;
+	background:none;
+	display:block;
+	margin:20px;
+	text-align:center;
+	border:3px solid #0367fd;
+	padding:14px 10px;
+	width:220px;
+	outline:none;
+	color:white;
+	border-radius:40px;
+	transition:0.25px;
+}
+
+div input[type="text"]:focus,div input[type="password"]
+
+{width:270px;
+border-color:#ffc400eb;
+}
+div input[type="submit"]{
+
+    border:0;
+    background:none;
+    display:block;	
+    margin:20px auto;
+	text-align:center;
+	border:3px solid #1aec21;
+	padding:14px 10px;
+	width:220px;
+	outline:none;
+	color:white;
+	border-radius:90px;
+	transition:0.25px;
+	cursor:pointer;
+	
+	
+}
+	
+div input[type="submit"]:hover{
+	background:#1aec21;
+	
+}
+	
